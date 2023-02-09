@@ -1,23 +1,28 @@
 <script lang="ts">
-	import { Navigate, routeIsActive } from 'svelte-router-spa';
+	import { Link, useLocation } from 'svelte-navigator';
+	let location = useLocation();
+
+	$: isEvaluation = $location.pathname == '/evaluation';
+	$: isContrast = $location.pathname == '/contrast';
+
+	function isRef(ref) {
+		if (ref) return 'navbar__link active';
+		else return 'navbar__link';
+	}
 </script>
 
 <header class="header">
 	<nav class="navbar container">
-		<Navigate to="/"><span class="main-logo">WEBACCESS</span></Navigate>
+		<Link to="/"><span class="main-logo">WEBACCESS</span></Link>
 		<ul class="navbar__list">
 			<li class="navbar__item">
-				<Navigate to="evaluation"
-					><span class="navbar__link" class:active={routeIsActive('evaluation')}
-						>Evaluation</span
-					></Navigate
+				<Link to="evaluation"
+					><span class={isRef(isEvaluation)}>Evaluation</span></Link
 				>
 			</li>
 			<li class="navbar__item">
-				<Navigate to="contrast"
-					><span class="navbar__link" class:active={routeIsActive('contrast')}
-						>Contrast</span
-					></Navigate
+				<Link to="contrast"
+					><span class={isRef(isContrast)}>Contrast</span></Link
 				>
 			</li>
 		</ul>
@@ -67,7 +72,7 @@
 		text-decoration: none;
 	}
 
-	:global(.active) {
+	.active {
 		color: $color-action;
 	}
 </style>
