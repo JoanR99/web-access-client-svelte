@@ -20,7 +20,7 @@ export enum HTTPStatusCode {
 	OK = 200,
 }
 
-const BASE_URL = '/api';
+const BASE_URL = 'https://web-access-server-fastapi.onrender.com/api';
 
 const apiInstance = axios.create({
 	baseURL: BASE_URL,
