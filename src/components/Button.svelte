@@ -12,7 +12,7 @@
 <style lang="scss">
 	@import '../theme';
 
-	.btn {
+	:global(.btn) {
 		color: #fff;
 		font-size: 1.6rem;
 		display: inline-block;
