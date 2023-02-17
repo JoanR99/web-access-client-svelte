@@ -1,4 +1,4 @@
-# WebAccess Backend
+# WebAccess Frontend
 
 WebAccess is a webapp with two tools to help web developers create more accessible content. The first tool is an automatic web accessibility evaluator, which allows the evaluation of HTML code by inserting the URL of a web page or the HTML code itself, applying up to 11 techniques proposed by the WCAG in its version 2.1. On the other hand, the second tool is a contrast evaluator, which allows knowing if the contrast ratio between two colors (text and background) meets any of the levels established by the WCAG.
 
