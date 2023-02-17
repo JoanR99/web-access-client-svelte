@@ -20,13 +20,7 @@ export enum HTTPStatusCode {
 	OK = 200,
 }
 
-let BASE_URL;
-
-if (import.meta.env.PROD) {
-	BASE_URL = import.meta.env.VITE_SERVER_URL;
-} else {
-	BASE_URL = '/api';
-}
+const BASE_URL = import.meta.env.VITE_SERVER_URL ?? '/api';
 
 const apiInstance = axios.create({
 	baseURL: BASE_URL,
