@@ -26,7 +26,7 @@ WebAccess is a webapp with two tools to help web developers create more accessib
 
 ## Stack
 
-![Typescript] ![Svelte] ![Sass]
+![Vite] ![Typescript] ![Svelte] ![Sass]
 
 This repository contains the second frontend version of WebAccess, developed with Typescript, Svelte and Sass. I decided to build this version with Svelte because I wanted to improve my skills regardless this framework and this seems like a perfect webapp to begin with.
 
@@ -77,6 +77,7 @@ This repository contains the second frontend version of WebAccess, developed wit
 - [Linkedin](https://www.linkedin.com/in/joanr99/ 'Linkedin Joan Romero')
 - [Portfolio](https://portfolio-joan-romero.vercel.app/ 'Portfolio Joan Romero')
 
+[vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
 [typescript]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
 [svelte]: https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white
 [sass]: https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white
